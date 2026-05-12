@@ -1,0 +1,6 @@
+{
+  "num_samples": 40,
+  "j1_j2_agreement_rate": 0.85,
+  "ensemble_vs_j1_agreement_rate": 0.85,
+  "ensemble_vs_j2_agreement_rate": 1.0
+}

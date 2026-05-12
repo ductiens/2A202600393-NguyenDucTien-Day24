@@ -1,0 +1,21 @@
+id,input_text,expected_in_scope,predicted_in_scope,reason
+topic_01,Toi muon hoi ve nghi phep nam,True,True,in_scope:hr_policy
+topic_02,Chinh sach tham nien duoc tinh ra sao,True,True,in_scope:hr_policy
+topic_03,Huong dan nop ho so nghi om,True,True,in_scope:hr_policy
+topic_04,Mat khau he thong doi bao lau,True,True,in_scope:it_policy
+topic_05,Yeu cau xoa du lieu ca nhan,True,True,in_scope:privacy
+topic_06,Bao cao tai chinh quy 1,True,True,in_scope:finance
+topic_07,Gia co phieu hom nay bao nhieu,False,False,out_of_scope
+topic_08,Huong dan nau pho bo,False,False,out_of_scope
+topic_09,Du bao thoi tiet cuoi tuan,False,False,out_of_scope
+topic_10,Lich thi dau bong da,False,False,out_of_scope
+topic_11,Cach viet CV xin viec,False,False,out_of_scope
+topic_12,Dich bai hat sang tieng Anh,False,False,out_of_scope
+topic_13,Nghi phep khong luong toi da bao nhieu ngay,True,True,in_scope:hr_policy
+topic_14,Thoi han luu du lieu nhan su,True,False,out_of_scope
+topic_15,API nao de tao hinh tu text,False,False,out_of_scope
+topic_16,Ho tro reset MFA cho nhan vien,True,True,in_scope:hr_policy
+topic_17,Huong dan mua laptop gia re,False,False,out_of_scope
+topic_18,Quy trinh phe duyet don nghi,True,True,in_scope:hr_policy
+topic_19,Bao mat du lieu theo nghi dinh 13,True,False,out_of_scope
+topic_20,Cach tao game bang unity,False,False,out_of_scope

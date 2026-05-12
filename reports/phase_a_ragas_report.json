@@ -1,0 +1,57 @@
+{
+  "engine": "heuristic_fallback",
+  "fallback_reason": "RAGAS_MODE=heuristic",
+  "aggregate": {
+    "faithfulness": 0.6461232680363115,
+    "answer_relevancy": 0.5380813143971038,
+    "context_precision": 0.2676046244839151,
+    "context_recall": 0.9895833333333334
+  },
+  "per_question": [
+    {
+      "question": "Nhan vien chinh thuc duoc nghi phep nam bao nhieu ngay moi nam?",
+      "faithfulness": 0.712,
+      "answer_relevancy": 0.6666666666666666,
+      "context_precision": 0.3583959899749373,
+      "context_recall": 1.0
+    },
+    {
+      "question": "So ngay nghi phep co tang them theo tham nien khong?",
+      "faithfulness": 0.6571428571428571,
+      "answer_relevancy": 0.5,
+      "context_precision": 0.24812030075187969,
+      "context_recall": 0.9375
+    },
+    {
+      "question": "Nhan vien co the xin nghi phep khong luong toi da bao nhieu ngay mot nam?",
+      "faithfulness": 0.6142857142857143,
+      "answer_relevancy": 0.7222222222222222,
+      "context_precision": 0.23641304347826086,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Don xin nghi phep can ai phe duyet?",
+      "faithfulness": 0.6086956521739131,
+      "answer_relevancy": 0.35714285714285715,
+      "context_precision": 0.26666666666666666,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Ho so nghi om can nop giay xac nhan trong bao lau?",
+      "faithfulness": 0.6538461538461539,
+      "answer_relevancy": 0.3157894736842105,
+      "context_precision": 0.1988095238095238,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhan vien chinh thuc duoc nghi phep nam bao nhieu ngay moi nam?",
+      "faithfulness": 0.6307692307692307,
+      "answer_relevancy": 0.6666666666666666,
+      "context_precision": 0.2972222222222222,
+      "context_recall": 1.0
+    }
+  ],
+  "timestamp_utc": "2026-05-12T04:12:57.358623+00:00",
+  "num_samples": 6,
+  "mean_score": 0.6103481350626659
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "q1",
+    "question": "Nhan vien chinh thuc duoc nghi phep nam bao nhieu ngay moi nam?",
+    "ground_truth": "Nhan vien chinh thuc duoc nghi phep nam 12 ngay lam viec moi nam.",
+    "retrieved_contexts": [
+      "Chinh sach nhan su quy dinh nhan vien chinh thuc duoc nghi phep nam 12 ngay lam viec moi nam.",
+      "So ngay nghi phep tang theo tham nien la mot chinh sach rieng."
+    ],
+    "answer": "Nhan vien chinh thuc duoc nghi phep nam 12 ngay lam viec moi nam.",
+    "candidate_a": "Nhan vien chinh thuc duoc nghi phep 12 ngay moi nam.",
+    "candidate_b": "Nhan vien duoc nghi phep 15 ngay moi nam.",
+    "human_preference": "A"
+  },
+  {
+    "id": "q2",
+    "question": "So ngay nghi phep co tang them theo tham nien khong?",
+    "ground_truth": "So ngay nghi phep tang them 1 ngay cho moi 5 nam tham nien cong tac.",
+    "retrieved_contexts": [
+      "Chinh sach ghi ro moi 5 nam tham nien se cong them 1 ngay nghi phep.",
+      "Nhan vien moi van ap dung 12 ngay nghi phep co ban."
+    ],
+    "answer": "Co. So ngay nghi phep tang them 1 ngay cho moi 5 nam tham nien cong tac.",
+    "candidate_a": "Co, cu moi 5 nam se duoc cong them 1 ngay nghi phep.",
+    "candidate_b": "Khong, tham nien khong anh huong den ngay nghi phep.",
+    "human_preference": "A"
+  },
+  {
+    "id": "q3",
+    "question": "Nhan vien co the xin nghi phep khong luong toi da bao nhieu ngay mot nam?",
+    "ground_truth": "Nhan vien co the xin nghi phep khong luong toi da 30 ngay moi nam.",
+    "retrieved_contexts": [
+      "Nghi phep khong luong toi da 30 ngay moi nam va can duoc phe duyet.",
+      "Thoi gian nop ho so nghi om khac voi nghi khong luong."
+    ],
+    "answer": "Nhan vien co the xin nghi phep khong luong toi da 30 ngay moi nam.",
+    "candidate_a": "Gioi han nghi khong luong la 20 ngay mot nam.",
+    "candidate_b": "Toi da 30 ngay nghi phep khong luong moi nam.",
+    "human_preference": "B"
+  },
+  {
+    "id": "q4",
+    "question": "Don xin nghi phep can ai phe duyet?",
+    "ground_truth": "Don xin nghi phai duoc Giam doc bo phan phe duyet.",
+    "retrieved_contexts": [
+      "Don nghi phep can chu ky phe duyet cua Giam doc bo phan.",
+      "He thong HRM luu vet lich su phe duyet."
+    ],
+    "answer": "Don xin nghi phai duoc Giam doc bo phan phe duyet.",
+    "candidate_a": "Don xin nghi phai duoc Giam doc bo phan phe duyet.",
+    "candidate_b": "Chi can Truong nhom dong y la du.",
+    "human_preference": "A"
+  },
+  {
+    "id": "q5",
+    "question": "Ho so nghi om can nop giay xac nhan trong bao lau?",
+    "ground_truth": "Can nop giay xac nhan y te trong vong 3 ngay lam viec.",
+    "retrieved_contexts": [
+      "Nhan vien nghi om phai nop giay xac nhan y te trong 3 ngay lam viec.",
+      "Nop cham co the anh huong den quyet toan phep."
+    ],
+    "answer": "Can nop giay xac nhan y te trong vong 3 ngay lam viec.",
+    "candidate_a": "Can nop trong 3 ngay lam viec.",
+    "candidate_b": "Can nop trong 7 ngay lam viec.",
+    "human_preference": "A"
+  },
+  {
+    "id": "q6",
+    "question": "Nhan vien chinh thuc duoc nghi phep nam bao nhieu ngay moi nam?",
+    "ground_truth": "Nhan vien chinh thuc duoc nghi phep nam 12 ngay lam viec moi nam.",
+    "retrieved_contexts": [
+      "Tai lieu noi ro 12 ngay nghi phep nam cho nhan vien chinh thuc.",
+      "Nghi khong luong toi da 30 ngay duoc quy dinh rieng."
+    ],
+    "answer": "Nhan vien chinh thuc duoc nghi phep nam 12 ngay lam viec moi nam.",
+    "candidate_a": "Nhan vien duoc nghi phep 12 ngay moi nam.",
+    "candidate_b": "Nhan vien duoc nghi phep 12 ngay moi nam.",
+    "human_preference": "TIE"
+  }
+]

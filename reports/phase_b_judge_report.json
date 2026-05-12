@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-05-12T04:12:57.359620+00:00",
+  "num_samples": 6,
+  "swap_and_average_enabled": true,
+  "cohen_kappa": 1.0,
+  "raw_agreement": 1.0,
+  "position_flip_rate": 0.0,
+  "details": [
+    {
+      "id": "q1",
+      "question": "Nhan vien chinh thuc duoc nghi phep nam bao nhieu ngay moi nam?",
+      "human_preference": "A",
+      "judge_debiased_winner": "A",
+      "judge_debiased_score_a": 0.8461538461538461,
+      "judge_debiased_score_b": 0.6153846153846154,
+      "position_flip": false,
+      "forward_engine": "rule",
+      "forward_winner": "A",
+      "backward_winner_raw": "B"
+    },
+    {
+      "id": "q2",
+      "question": "So ngay nghi phep co tang them theo tham nien khong?",
+      "human_preference": "A",
+      "judge_debiased_winner": "A",
+      "judge_debiased_score_a": 0.6,
+      "judge_debiased_score_b": 0.3333333333333333,
+      "position_flip": false,
+      "forward_engine": "rule",
+      "forward_winner": "A",
+      "backward_winner_raw": "B"
+    },
+    {
+      "id": "q3",
+      "question": "Nhan vien co the xin nghi phep khong luong toi da bao nhieu ngay mot nam?",
+      "human_preference": "B",
+      "judge_debiased_winner": "B",
+      "judge_debiased_score_a": 0.3333333333333333,
+      "judge_debiased_score_b": 0.6666666666666666,
+      "position_flip": false,
+      "forward_engine": "rule",
+      "forward_winner": "B",
+      "backward_winner_raw": "A"
+    },
+    {
+      "id": "q4",
+      "question": "Don xin nghi phep can ai phe duyet?",
+      "human_preference": "A",
+      "judge_debiased_winner": "A",
+      "judge_debiased_score_a": 1.0,
+      "judge_debiased_score_b": 0.0,
+      "position_flip": false,
+      "forward_engine": "rule",
+      "forward_winner": "A",
+      "backward_winner_raw": "B"
+    },
+    {
+      "id": "q5",
+      "question": "Ho so nghi om can nop giay xac nhan trong bao lau?",
+      "human_preference": "A",
+      "judge_debiased_winner": "A",
+      "judge_debiased_score_a": 0.5384615384615384,
+      "judge_debiased_score_b": 0.46153846153846156,
+      "position_flip": false,
+      "forward_engine": "rule",
+      "forward_winner": "A",
+      "backward_winner_raw": "B"
+    },
+    {
+      "id": "q6",
+      "question": "Nhan vien chinh thuc duoc nghi phep nam bao nhieu ngay moi nam?",
+      "human_preference": "TIE",
+      "judge_debiased_winner": "TIE",
+      "judge_debiased_score_a": 0.6923076923076923,
+      "judge_debiased_score_b": 0.6923076923076923,
+      "position_flip": false,
+      "forward_engine": "rule",
+      "forward_winner": "TIE",
+      "backward_winner_raw": "TIE"
+    }
+  ]
+}

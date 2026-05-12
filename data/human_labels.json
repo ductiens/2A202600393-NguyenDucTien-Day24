@@ -1,0 +1,8 @@
+[
+  {"id": "q1", "human_preference": "A"},
+  {"id": "q2", "human_preference": "A"},
+  {"id": "q3", "human_preference": "B"},
+  {"id": "q4", "human_preference": "A"},
+  {"id": "q5", "human_preference": "A"},
+  {"id": "q6", "human_preference": "TIE"}
+]

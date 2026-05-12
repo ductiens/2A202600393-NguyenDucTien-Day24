@@ -1,0 +1,11 @@
+id,question,human_winner,confidence,notes
+S01,Nhan vien chinh thuc duoc nghi phep nam bao nhieu ngay moi nam?,tie,medium,Manual comparison using factuality + relevance rubric.
+S02,So ngay nghi phep co tang theo tham nien khong?,tie,medium,Manual comparison using factuality + relevance rubric.
+S03,Nhan vien duoc nghi phep khong luong toi da bao nhieu ngay moi nam?,tie,medium,Manual comparison using factuality + relevance rubric.
+S04,Don xin nghi phep can ai phe duyet?,tie,medium,Manual comparison using factuality + relevance rubric.
+S05,Nghi om can nop giay xac nhan y te trong bao lau?,tie,medium,Manual comparison using factuality + relevance rubric.
+S06,Mat khau he thong phai doi bao lau mot lan?,tie,medium,Manual comparison using factuality + relevance rubric.
+S07,Du lieu nhan su duoc luu toi da bao lau?,A,high,Manual comparison using factuality + relevance rubric.
+S08,Ai la dau moi tiep nhan yeu cau ve bao ve du lieu ca nhan?,tie,medium,Manual comparison using factuality + relevance rubric.
+S09,Nhan vien chinh thuc duoc nghi phep nam bao nhieu ngay moi nam?,A,high,Manual comparison using factuality + relevance rubric.
+S10,So ngay nghi phep co tang theo tham nien khong?,tie,medium,Manual comparison using factuality + relevance rubric.

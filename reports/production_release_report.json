@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-05-12T04:12:57.362638+00:00",
+  "phase_a": {
+    "engine": "heuristic_fallback",
+    "aggregate": {
+      "faithfulness": 0.6461232680363115,
+      "answer_relevancy": 0.5380813143971038,
+      "context_precision": 0.2676046244839151,
+      "context_recall": 0.9895833333333334
+    },
+    "mean_score": 0.6103481350626659
+  },
+  "phase_b": {
+    "cohen_kappa": 1.0,
+    "raw_agreement": 1.0,
+    "position_flip_rate": 0.0,
+    "swap_and_average_enabled": true
+  },
+  "phase_c": {
+    "blocked_count": 0,
+    "pii_detection_hit_count": 1,
+    "topic_block_count": 0,
+    "unsafe_output_count": 0
+  }
+}

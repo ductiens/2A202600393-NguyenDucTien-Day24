@@ -1,0 +1,8 @@
+{
+  "faithfulness": 0.7218,
+  "answer_relevancy": 0.4399,
+  "context_precision": 0.3035,
+  "context_recall": 0.9655,
+  "estimated_total_cost_usd": 0.0,
+  "notes": "Heuristic/offline scoring mode for reproducible lab submission."
+}

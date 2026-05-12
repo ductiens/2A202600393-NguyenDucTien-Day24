@@ -1,0 +1,91 @@
+{
+  "aggregate": {
+    "faithfulness": 0.8875,
+    "answer_relevancy": 0.8448716580917548,
+    "context_precision": 0.8804166666319896,
+    "context_recall": 0.75
+  },
+  "num_questions": 10,
+  "failures": [
+    {
+      "question": "Các hành vi bị nghiêm cấm theo Điều 8 Nghị định 13 là gì?",
+      "avg_score": 0.4539,
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten prompt, lower temperature"
+    },
+    {
+      "question": "Dữ liệu cá nhân cơ bản bao gồm những thông tin gì?",
+      "avg_score": 0.5919,
+      "worst_metric": "context_recall",
+      "score": 0.0,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking or add BM25"
+    },
+    {
+      "question": "Chủ thể dữ liệu có những quyền gì theo Điều 9 Nghị định 13?",
+      "avg_score": 0.7134,
+      "worst_metric": "context_recall",
+      "score": 0.0,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking or add BM25"
+    },
+    {
+      "question": "Dữ liệu cá nhân nhạy cảm là gì và bao gồm những loại nào?",
+      "avg_score": 0.7884,
+      "worst_metric": "context_recall",
+      "score": 0.5,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking or add BM25"
+    },
+    {
+      "question": "Tên công ty nộp tờ khai thuế GTGT quý 4 năm 2024 là gì?",
+      "avg_score": 0.8386,
+      "worst_metric": "context_precision",
+      "score": 0.5,
+      "diagnosis": "Too many irrelevant chunks",
+      "suggested_fix": "Add reranking or metadata filter"
+    },
+    {
+      "question": "Nghị định 13 áp dụng đối với những đối tượng nào?",
+      "avg_score": 0.9087,
+      "worst_metric": "answer_relevancy",
+      "score": 0.8308,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Thuế GTGT còn phải nộp trong kỳ quý 4 năm 2024 là bao nhiêu?",
+      "avg_score": 0.9578,
+      "worst_metric": "answer_relevancy",
+      "score": 0.8312,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Việc hạn chế xử lý dữ liệu cá nhân phải được thực hiện trong bao lâu sau khi có yêu cầu?",
+      "avg_score": 0.9639,
+      "worst_metric": "answer_relevancy",
+      "score": 0.8555,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Nghị định 13/2023/NĐ-CP quy định về vấn đề gì?",
+      "avg_score": 0.9699,
+      "worst_metric": "answer_relevancy",
+      "score": 0.8795,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Tổng giá trị hàng hóa dịch vụ bán ra chịu thuế suất 10% trong quý 4 năm 2024 là bao nhiêu?",
+      "avg_score": 0.9704,
+      "worst_metric": "answer_relevancy",
+      "score": 0.8818,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    }
+  ]
+}
