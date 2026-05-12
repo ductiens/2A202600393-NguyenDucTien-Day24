@@ -4,9 +4,9 @@
 
 | Bias | Metric | Value |
 |---|---:|---:|
-| Position bias (run1 A-win rate) | 20/40 | 50.00% |
-| Position bias (run2 raw A-win rate) | 0/40 | 0.00% |
-| Swap disagreement rate | 11/40 | 27.50% |
+| Position bias (run1 A-win rate) | 19/40 | 47.50% |
+| Position bias (run2 raw A-win rate) | 1/40 | 2.50% |
+| Swap disagreement rate | 9/40 | 22.50% |
 | Length bias (B > 1.5x A then B wins) | 0/6 | 0.00% |
 
 ## Observations

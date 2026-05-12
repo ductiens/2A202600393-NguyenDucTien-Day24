@@ -169,6 +169,12 @@ def run_adversarial_tests(input_guard, prompt_guard) -> tuple[list[dict], dict]:
         blocked = (not dec.ok) or pg_mal
         if blocked:
             blocked_attacks += 1
+        if not dec.ok:
+            reason = dec.reason
+        elif pg_mal:
+            reason = "prompt_guard_block"
+        else:
+            reason = "allowed"
         rows.append(
             {
                 "id": f"atk_{idx:02d}",
@@ -176,7 +182,7 @@ def run_adversarial_tests(input_guard, prompt_guard) -> tuple[list[dict], dict]:
                 "attack_type": atype,
                 "text": text[:160],
                 "blocked": blocked,
-                "reason": dec.reason if not dec.ok else "prompt_guard_block",
+                "reason": reason,
                 "prompt_guard_score": round(pg_score, 4),
             }
         )

@@ -1,0 +1,9 @@
+{
+  "faithfulness": 0.74,
+  "answer_relevancy": 0.08665318242098557,
+  "context_precision": 0.9999999999129998,
+  "context_recall": 0.8933333333333333,
+  "mode": "online_ragas",
+  "source_csv": "D:\\Vin\\Github_Lab\\Day24-Track3-Production-RAG\\phase-a\\ragas_results.csv",
+  "embedding_model": "text-embedding-3-small"
+}

@@ -64,13 +64,39 @@ def main() -> None:
 
     from datasets import Dataset
     from ragas import evaluate
-    from ragas.metrics import answer_relevancy, context_precision, context_recall, faithfulness
     from ragas.run_config import RunConfig
+    # ragas==0.4.x expects initialized metric objects from ragas.metrics
+    from ragas.metrics import answer_relevancy, context_precision, context_recall, faithfulness
+
+    # Provide an embeddings implementation compatible with RAGAS metric requirements.
+    embeddings = None
+    try:
+        from langchain_openai import OpenAIEmbeddings
+
+        embeddings = OpenAIEmbeddings(model=os.getenv("OPENAI_EMBED_MODEL", "text-embedding-3-small"))
+    except Exception:
+        try:
+            from langchain_community.embeddings import OpenAIEmbeddings
+
+            embeddings = OpenAIEmbeddings(model=os.getenv("OPENAI_EMBED_MODEL", "text-embedding-3-small"))
+        except Exception:
+            embeddings = None
+    if embeddings is None:
+        raise RuntimeError(
+            "Could not initialize OpenAI embeddings for RAGAS. "
+            "Install `langchain-openai` and ensure OPENAI_API_KEY is valid."
+        )
+    if not hasattr(embeddings, "embed_query"):
+        raise RuntimeError(
+            "OpenAI embeddings object does not expose embed_query(). "
+            "Please use langchain-openai OpenAIEmbeddings."
+        )
 
     ds = Dataset.from_list(dataset_rows)
     result = evaluate(
         ds,
         metrics=[faithfulness, answer_relevancy, context_precision, context_recall],
+        embeddings=embeddings,
         run_config=RunConfig(timeout=30, max_retries=1, max_wait=3, max_workers=4),
         raise_exceptions=False,
         show_progress=False,
@@ -81,14 +107,21 @@ def main() -> None:
     frame.to_csv(out_csv, index=False)
 
     # aggregate
-    rdict = result.to_dict() if hasattr(result, "to_dict") else dict(result)
+    metric_cols = ["faithfulness", "answer_relevancy", "context_precision", "context_recall"]
+    agg = {}
+    for col in metric_cols:
+        if col in frame.columns:
+            agg[col] = float(frame[col].dropna().mean())
+        else:
+            agg[col] = 0.0
     summary = {
-        "faithfulness": float(rdict.get("faithfulness", 0.0)),
-        "answer_relevancy": float(rdict.get("answer_relevancy", 0.0)),
-        "context_precision": float(rdict.get("context_precision", 0.0)),
-        "context_recall": float(rdict.get("context_recall", 0.0)),
+        "faithfulness": agg["faithfulness"],
+        "answer_relevancy": agg["answer_relevancy"],
+        "context_precision": agg["context_precision"],
+        "context_recall": agg["context_recall"],
         "mode": "online_ragas",
         "source_csv": str(in_csv),
+        "embedding_model": os.getenv("OPENAI_EMBED_MODEL", "text-embedding-3-small"),
     }
     out_summary.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 

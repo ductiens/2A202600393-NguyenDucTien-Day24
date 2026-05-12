@@ -1,11 +1,11 @@
 id,case_type,input_text,expected_pii,detected_pii,num_findings,latency_ms,redacted_preview
-pii_01,vn_cccd,CCCD cua toi la 079203001234,True,True,1,0.0162,CCCD cua toi la [REDACTED_CCCD]
-pii_02,vn_phone,So dien thoai 0912345678,True,True,1,0.0081,So dien thoai [REDACTED_PHONE]
-pii_03,intl_prefix,Lien he +84981234567 de xac nhan,True,True,1,0.0109,Lien he [REDACTED_PHONE] de xac nhan
-pii_04,clean,Khong co du lieu nhay cam o day,False,False,0,0.0072,Khong co du lieu nhay cam o day
-pii_05,empty,,False,False,0,0.0032,
-pii_06,very_long,noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung d,True,True,1,1.3721,noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung d
-pii_07,mixed,Thong tin: phone 0987654321 va code abc,True,True,1,0.0121,Thong tin: phone [REDACTED_PHONE] va code abc
-pii_08,false_alarm,employee id 12345 khong phai cccd,False,False,0,0.0085,employee id 12345 khong phai cccd
-pii_09,multilingual,SDT 0355556666 (unicode text),True,True,1,0.0087,SDT [REDACTED_PHONE] (unicode text)
-pii_10,order_id,Ma don hang: OD-20394,False,False,0,0.0066,Ma don hang: OD-20394
+pii_01,vn_cccd,CCCD cua toi la 079203001234,True,True,1,0.0113,CCCD cua toi la [REDACTED_CCCD]
+pii_02,vn_phone,So dien thoai 0912345678,True,True,1,0.0055,So dien thoai [REDACTED_PHONE]
+pii_03,intl_prefix,Lien he +84981234567 de xac nhan,True,True,1,0.0073,Lien he [REDACTED_PHONE] de xac nhan
+pii_04,clean,Khong co du lieu nhay cam o day,False,False,0,0.0048,Khong co du lieu nhay cam o day
+pii_05,empty,,False,False,0,0.002,
+pii_06,very_long,noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung d,True,True,1,0.7892,noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung dai noi dung d
+pii_07,mixed,Thong tin: phone 0987654321 va code abc,True,True,1,0.0064,Thong tin: phone [REDACTED_PHONE] va code abc
+pii_08,false_alarm,employee id 12345 khong phai cccd,False,False,0,0.0048,employee id 12345 khong phai cccd
+pii_09,multilingual,SDT 0355556666 (unicode text),True,True,1,0.0056,SDT [REDACTED_PHONE] (unicode text)
+pii_10,order_id,Ma don hang: OD-20394,False,False,0,0.0035,Ma don hang: OD-20394

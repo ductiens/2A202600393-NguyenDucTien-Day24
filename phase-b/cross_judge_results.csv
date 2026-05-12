@@ -4,9 +4,9 @@ S02,So ngay nghi phep co tang theo tham nien khong?,TIE,TIE,A,TIE,14,16
 S03,Nhan vien duoc nghi phep khong luong toi da bao nhieu ngay moi nam?,A,A,A,A,13,15
 S04,Don xin nghi phep can ai phe duyet?,TIE,TIE,A,TIE,12,14
 S05,Nghi om can nop giay xac nhan y te trong bao lau?,TIE,A,A,A,13,26
-S06,Mat khau he thong phai doi bao lau mot lan?,TIE,TIE,A,TIE,9,11
+S06,Mat khau he thong phai doi bao lau mot lan?,A,A,A,A,9,11
 S07,Du lieu nhan su duoc luu toi da bao lau?,A,A,A,A,15,14
-S08,Ai la dau moi tiep nhan yeu cau ve bao ve du lieu ca nhan?,A,A,A,A,16,18
+S08,Ai la dau moi tiep nhan yeu cau ve bao ve du lieu ca nhan?,TIE,TIE,A,TIE,16,18
 S09,Nhan vien chinh thuc duoc nghi phep nam bao nhieu ngay moi nam?,A,A,A,A,14,14
 S10,So ngay nghi phep co tang theo tham nien khong?,A,A,A,A,14,27
 S11,Nhan vien duoc nghi phep khong luong toi da bao nhieu ngay moi nam?,A,A,A,A,13,15
@@ -17,7 +17,7 @@ S15,Du lieu nhan su duoc luu toi da bao lau?,A,A,A,A,15,28
 S16,Ai la dau moi tiep nhan yeu cau ve bao ve du lieu ca nhan?,TIE,TIE,A,TIE,16,18
 S17,Nhan vien chinh thuc duoc nghi phep nam bao nhieu ngay moi nam?,A,A,A,A,14,16
 S18,So ngay nghi phep co tang theo tham nien khong?,TIE,TIE,A,TIE,14,14
-S19,Nhan vien duoc nghi phep khong luong toi da bao nhieu ngay moi nam?,A,A,A,A,13,15
+S19,Nhan vien duoc nghi phep khong luong toi da bao nhieu ngay moi nam?,TIE,TIE,A,TIE,13,15
 S20,Don xin nghi phep can ai phe duyet?,A,A,A,A,12,25
 S21,Nghi om can nop giay xac nhan y te trong bao lau?,A,A,A,A,13,14
 S22,Mat khau he thong phai doi bao lau mot lan?,TIE,TIE,A,TIE,9,11
