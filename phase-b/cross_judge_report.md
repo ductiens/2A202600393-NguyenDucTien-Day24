@@ -10,8 +10,8 @@ This report compares multi-judge agreement and an ensemble winner.
 
 ## Metrics
 - Samples: 40
-- Judge1 vs Judge2 agreement: 85.00%
-- Ensemble vs Judge1 agreement: 85.00%
+- Judge1 vs Judge2 agreement: 97.50%
+- Ensemble vs Judge1 agreement: 97.50%
 - Ensemble vs Judge2 agreement: 100.00%
 
 ## Artifact

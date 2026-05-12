@@ -1,121 +1,121 @@
 request_id,query,L1_ms,L2_ms,L3_ms,total_ms,allowed,pii_hits
-1,Nhan vien duoc nghi phep bao nhieu ngay?,0.1526,0.0015,0.0187,0.1787,True,0
-2,Tham nien anh huong ngay nghi nhu the nao?,0.0439,0.0009,0.0128,0.0605,True,0
-3,Nghi khong luong toi da bao nhieu ngay?,0.0366,0.0,0.0,0.0397,False,0
-4,Don nghi phep can ai phe duyet?,0.0381,0.0017,0.0127,0.0558,True,0
-5,Mat khau he thong doi bao lau?,0.0308,0.001,0.0125,0.0467,True,0
-6,Yeu cau xoa du lieu ca nhan gui ai?,0.0275,0.0011,0.0121,0.0427,True,0
-7,Bao cao tai chinh quy gom gi?,0.0269,0.001,0.0104,0.0401,True,0
-8,Nghi om can nop giay to trong bao lau?,0.0282,0.001,0.0113,0.0422,True,0
-9,MFA bat buoc cho vai tro nao?,0.0258,0.0014,0.0109,0.0399,True,0
-10,Quy trinh luu tru du lieu nhan su ra sao?,0.0287,0.0,0.0,0.0302,False,0
-11,Nhan vien duoc nghi phep bao nhieu ngay?,0.0267,0.0008,0.0114,0.0406,True,0
-12,Tham nien anh huong ngay nghi nhu the nao?,0.0258,0.0006,0.0113,0.0397,True,0
-13,Nghi khong luong toi da bao nhieu ngay?,0.0279,0.0,0.0,0.0292,False,0
-14,Don nghi phep can ai phe duyet?,0.0239,0.0011,0.0105,0.0371,True,0
-15,Mat khau he thong doi bao lau?,0.0253,0.0008,0.0109,0.0388,True,0
-16,Yeu cau xoa du lieu ca nhan gui ai?,0.0253,0.0008,0.0113,0.0387,True,0
-17,Bao cao tai chinh quy gom gi?,0.0238,0.0009,0.0104,0.0366,True,0
-18,Nghi om can nop giay to trong bao lau?,0.0258,0.0011,0.0109,0.039,True,0
-19,MFA bat buoc cho vai tro nao?,0.025,0.0007,0.0103,0.0375,True,0
-20,Quy trinh luu tru du lieu nhan su ra sao?,0.0271,0.0,0.0,0.0283,False,0
-21,Nhan vien duoc nghi phep bao nhieu ngay?,0.0249,0.0008,0.0108,0.0378,True,0
-22,Tham nien anh huong ngay nghi nhu the nao?,0.0261,0.0007,0.011,0.0397,True,0
-23,Nghi khong luong toi da bao nhieu ngay?,0.0269,0.0,0.0,0.0281,False,0
-24,Don nghi phep can ai phe duyet?,0.026,0.0007,0.0105,0.0386,True,0
-25,Mat khau he thong doi bao lau?,0.0251,0.0009,0.0122,0.0397,True,0
-26,Yeu cau xoa du lieu ca nhan gui ai?,0.0245,0.0008,0.0114,0.0381,True,0
-27,Bao cao tai chinh quy gom gi?,0.0232,0.0008,0.0099,0.0351,True,0
-28,Nghi om can nop giay to trong bao lau?,0.0247,0.0008,0.0103,0.0373,True,0
-29,MFA bat buoc cho vai tro nao?,0.0254,0.0006,0.0097,0.0372,True,0
-30,Quy trinh luu tru du lieu nhan su ra sao?,0.0256,0.0,0.0,0.0268,False,0
-31,Nhan vien duoc nghi phep bao nhieu ngay?,0.0253,0.0006,0.0106,0.0379,True,0
-32,Tham nien anh huong ngay nghi nhu the nao?,0.0242,0.0005,0.011,0.0372,True,0
-33,Nghi khong luong toi da bao nhieu ngay?,0.0318,0.0,0.0,0.033,False,0
-34,Don nghi phep can ai phe duyet?,0.0226,0.0007,0.0101,0.0349,True,0
-35,Mat khau he thong doi bao lau?,0.0244,0.0007,0.0104,0.037,True,0
-36,Yeu cau xoa du lieu ca nhan gui ai?,0.0246,0.0007,0.011,0.0379,True,0
-37,Bao cao tai chinh quy gom gi?,0.0234,0.0005,0.01,0.0354,True,0
-38,Nghi om can nop giay to trong bao lau?,0.0251,0.0006,0.0103,0.0374,True,0
-39,MFA bat buoc cho vai tro nao?,0.0238,0.0006,0.0101,0.0361,True,0
-40,Quy trinh luu tru du lieu nhan su ra sao?,0.0267,0.0,0.0,0.0281,False,0
-41,Nhan vien duoc nghi phep bao nhieu ngay?,0.0251,0.0007,0.0108,0.038,True,0
-42,Tham nien anh huong ngay nghi nhu the nao?,0.0373,0.0006,0.0113,0.051,True,0
-43,Nghi khong luong toi da bao nhieu ngay?,0.0294,0.0,0.0,0.0308,False,0
-44,Don nghi phep can ai phe duyet?,0.0237,0.0008,0.0105,0.0364,True,0
-45,Mat khau he thong doi bao lau?,0.0252,0.0006,0.0108,0.0383,True,0
-46,Yeu cau xoa du lieu ca nhan gui ai?,0.0247,0.0007,0.0108,0.0375,True,0
-47,Bao cao tai chinh quy gom gi?,0.0226,0.0007,0.01,0.0348,True,0
-48,Nghi om can nop giay to trong bao lau?,0.0245,0.0006,0.0101,0.0365,True,0
-49,MFA bat buoc cho vai tro nao?,0.0235,0.0007,0.0098,0.0352,True,0
-50,Quy trinh luu tru du lieu nhan su ra sao?,0.0273,0.0,0.0,0.0286,False,0
-51,Nhan vien duoc nghi phep bao nhieu ngay?,0.0252,0.0007,0.0107,0.038,True,0
-52,Tham nien anh huong ngay nghi nhu the nao?,0.0248,0.0005,0.0103,0.0371,True,0
-53,Nghi khong luong toi da bao nhieu ngay?,0.0266,0.0,0.0,0.0277,False,0
-54,Don nghi phep can ai phe duyet?,0.0224,0.0007,0.0098,0.0342,True,0
-55,Mat khau he thong doi bao lau?,0.0241,0.0006,0.0109,0.0371,True,0
-56,Yeu cau xoa du lieu ca nhan gui ai?,0.0252,0.0007,0.0119,0.039,True,0
-57,Bao cao tai chinh quy gom gi?,0.0226,0.0006,0.0112,0.0356,True,0
-58,Nghi om can nop giay to trong bao lau?,0.0246,0.0005,0.0101,0.0366,True,0
-59,MFA bat buoc cho vai tro nao?,0.0242,0.0005,0.0097,0.0358,True,0
-60,Quy trinh luu tru du lieu nhan su ra sao?,0.026,0.0,0.0,0.0271,False,0
-61,Nhan vien duoc nghi phep bao nhieu ngay?,0.0244,0.0005,0.0107,0.037,True,0
-62,Tham nien anh huong ngay nghi nhu the nao?,0.0251,0.0005,0.0103,0.0374,True,0
-63,Nghi khong luong toi da bao nhieu ngay?,0.0263,0.0,0.0,0.0274,False,0
-64,Don nghi phep can ai phe duyet?,0.0225,0.0007,0.0101,0.0345,True,0
-65,Mat khau he thong doi bao lau?,0.0237,0.0007,0.0106,0.0362,True,0
-66,Yeu cau xoa du lieu ca nhan gui ai?,0.0236,0.0006,0.0108,0.0362,True,0
-67,Bao cao tai chinh quy gom gi?,0.0225,0.0006,0.0098,0.0341,True,0
-68,Nghi om can nop giay to trong bao lau?,0.0247,0.0005,0.0101,0.0366,True,0
-69,MFA bat buoc cho vai tro nao?,0.0252,0.0006,0.0099,0.0371,True,0
-70,Quy trinh luu tru du lieu nhan su ra sao?,0.0265,0.0,0.0,0.0277,False,0
-71,Nhan vien duoc nghi phep bao nhieu ngay?,0.0249,0.0004,0.0103,0.0369,True,0
-72,Tham nien anh huong ngay nghi nhu the nao?,0.0244,0.0005,0.0105,0.037,True,0
-73,Nghi khong luong toi da bao nhieu ngay?,0.0264,0.0,0.0,0.0274,False,0
-74,Don nghi phep can ai phe duyet?,0.0237,0.0006,0.01,0.0356,True,0
-75,Mat khau he thong doi bao lau?,0.0246,0.0006,0.0106,0.0373,True,0
-76,Yeu cau xoa du lieu ca nhan gui ai?,0.0235,0.0006,0.0107,0.0362,True,0
-77,Bao cao tai chinh quy gom gi?,0.0232,0.0006,0.0098,0.0349,True,0
-78,Nghi om can nop giay to trong bao lau?,0.0246,0.0006,0.0097,0.0363,True,0
-79,MFA bat buoc cho vai tro nao?,0.0233,0.0005,0.0099,0.0351,True,0
-80,Quy trinh luu tru du lieu nhan su ra sao?,0.0261,0.0,0.0,0.0272,False,0
-81,Nhan vien duoc nghi phep bao nhieu ngay?,0.0244,0.0006,0.0105,0.0368,True,0
-82,Tham nien anh huong ngay nghi nhu the nao?,0.024,0.0005,0.0117,0.0374,True,0
-83,Nghi khong luong toi da bao nhieu ngay?,0.0262,0.0,0.0,0.0272,False,0
-84,Don nghi phep can ai phe duyet?,0.0232,0.0008,0.0099,0.0351,True,0
-85,Mat khau he thong doi bao lau?,0.0249,0.0006,0.0115,0.0382,True,0
-86,Yeu cau xoa du lieu ca nhan gui ai?,0.024,0.0005,0.0107,0.0365,True,0
-87,Bao cao tai chinh quy gom gi?,0.0243,0.0005,0.0101,0.0362,True,0
-88,Nghi om can nop giay to trong bao lau?,0.0246,0.0006,0.0102,0.0377,True,0
-89,MFA bat buoc cho vai tro nao?,0.024,0.0005,0.0231,0.0489,True,0
-90,Quy trinh luu tru du lieu nhan su ra sao?,0.0243,0.0,0.0,0.0254,False,0
-91,Nhan vien duoc nghi phep bao nhieu ngay?,0.0232,0.0005,0.0105,0.0355,True,0
-92,Tham nien anh huong ngay nghi nhu the nao?,0.0243,0.0005,0.0105,0.0368,True,0
-93,Nghi khong luong toi da bao nhieu ngay?,0.0253,0.0,0.0,0.0263,False,0
-94,Don nghi phep can ai phe duyet?,0.0199,0.0007,0.0098,0.0318,True,0
-95,Mat khau he thong doi bao lau?,0.0225,0.0006,0.0107,0.0352,True,0
-96,Yeu cau xoa du lieu ca nhan gui ai?,0.0229,0.0006,0.0108,0.0358,True,0
-97,Bao cao tai chinh quy gom gi?,0.0332,0.0007,0.0097,0.0451,True,0
-98,Nghi om can nop giay to trong bao lau?,0.0225,0.0007,0.0098,0.0345,True,0
-99,MFA bat buoc cho vai tro nao?,0.0219,0.0007,0.0091,0.0332,True,0
-100,Quy trinh luu tru du lieu nhan su ra sao?,0.0241,0.0,0.0,0.0253,False,0
-101,Nhan vien duoc nghi phep bao nhieu ngay?,0.0213,0.0006,0.0099,0.0331,True,0
-102,Tham nien anh huong ngay nghi nhu the nao?,0.0222,0.0004,0.0099,0.0338,True,0
-103,Nghi khong luong toi da bao nhieu ngay?,0.0241,0.0,0.0,0.0252,False,0
-104,Don nghi phep can ai phe duyet?,0.021,0.0007,0.0104,0.0336,True,0
-105,Mat khau he thong doi bao lau?,0.0221,0.0005,0.0104,0.0345,True,0
-106,Yeu cau xoa du lieu ca nhan gui ai?,0.0226,0.0006,0.0108,0.0354,True,0
-107,Bao cao tai chinh quy gom gi?,0.0233,0.0005,0.009,0.0342,True,0
-108,Nghi om can nop giay to trong bao lau?,0.0233,0.0005,0.0095,0.0346,True,0
-109,MFA bat buoc cho vai tro nao?,0.0214,0.0005,0.0093,0.0326,True,0
-110,Quy trinh luu tru du lieu nhan su ra sao?,0.023,0.0,0.0,0.0242,False,0
-111,Nhan vien duoc nghi phep bao nhieu ngay?,0.0229,0.0005,0.0098,0.0346,True,0
-112,Tham nien anh huong ngay nghi nhu the nao?,0.0216,0.0005,0.0098,0.0334,True,0
-113,Nghi khong luong toi da bao nhieu ngay?,0.0231,0.0,0.0,0.0242,False,0
-114,Don nghi phep can ai phe duyet?,0.0206,0.0007,0.0092,0.0318,True,0
-115,Mat khau he thong doi bao lau?,0.0211,0.0006,0.0098,0.0327,True,0
-116,Yeu cau xoa du lieu ca nhan gui ai?,0.0206,0.0006,0.0102,0.0327,True,0
-117,Bao cao tai chinh quy gom gi?,0.0206,0.0005,0.0089,0.0313,True,0
-118,Nghi om can nop giay to trong bao lau?,0.0213,0.0005,0.0093,0.0324,True,0
-119,MFA bat buoc cho vai tro nao?,0.0214,0.0006,0.0094,0.0325,True,0
-120,Quy trinh luu tru du lieu nhan su ra sao?,0.0238,0.0,0.0,0.0248,False,0
+1,Nhan vien duoc nghi phep bao nhieu ngay?,0.187,0.0019,0.0237,0.2206,True,0
+2,Tham nien anh huong ngay nghi nhu the nao?,0.0618,0.0013,0.0165,0.0835,True,0
+3,Nghi khong luong toi da bao nhieu ngay?,0.0536,0.0,0.0,0.0573,False,0
+4,Don nghi phep can ai phe duyet?,0.0525,0.002,0.0165,0.0755,True,0
+5,Mat khau he thong doi bao lau?,0.0423,0.0015,0.016,0.0635,True,0
+6,Yeu cau xoa du lieu ca nhan gui ai?,0.0399,0.0015,0.0163,0.0604,True,0
+7,Bao cao tai chinh quy gom gi?,0.0351,0.0012,0.0137,0.0527,True,0
+8,Nghi om can nop giay to trong bao lau?,0.0369,0.0014,0.0143,0.0551,True,0
+9,MFA bat buoc cho vai tro nao?,0.0345,0.0021,0.0143,0.0534,True,0
+10,Quy trinh luu tru du lieu nhan su ra sao?,0.0377,0.0,0.0,0.0399,False,0
+11,Nhan vien duoc nghi phep bao nhieu ngay?,0.0357,0.0011,0.015,0.0539,True,0
+12,Tham nien anh huong ngay nghi nhu the nao?,0.0351,0.001,0.0146,0.0529,True,0
+13,Nghi khong luong toi da bao nhieu ngay?,0.0368,0.0,0.0,0.0388,False,0
+14,Don nghi phep can ai phe duyet?,0.0318,0.0012,0.0158,0.0509,True,0
+15,Mat khau he thong doi bao lau?,0.0343,0.0013,0.0145,0.0526,True,0
+16,Yeu cau xoa du lieu ca nhan gui ai?,0.0341,0.0011,0.0147,0.052,True,0
+17,Bao cao tai chinh quy gom gi?,0.0338,0.0013,0.0134,0.0506,True,0
+18,Nghi om can nop giay to trong bao lau?,0.0336,0.001,0.0135,0.0501,True,0
+19,MFA bat buoc cho vai tro nao?,0.032,0.0009,0.0129,0.0479,True,0
+20,Quy trinh luu tru du lieu nhan su ra sao?,0.0355,0.0,0.0,0.0372,False,0
+21,Nhan vien duoc nghi phep bao nhieu ngay?,0.0323,0.0009,0.0143,0.0494,True,0
+22,Tham nien anh huong ngay nghi nhu the nao?,0.0352,0.0008,0.0152,0.0533,True,0
+23,Nghi khong luong toi da bao nhieu ngay?,0.0344,0.0,0.0,0.036,False,0
+24,Don nghi phep can ai phe duyet?,0.0323,0.0011,0.0131,0.0483,True,0
+25,Mat khau he thong doi bao lau?,0.0333,0.0011,0.0144,0.0509,True,0
+26,Yeu cau xoa du lieu ca nhan gui ai?,0.0315,0.001,0.014,0.0484,True,0
+27,Bao cao tai chinh quy gom gi?,0.0313,0.0011,0.0127,0.0471,True,0
+28,Nghi om can nop giay to trong bao lau?,0.0321,0.001,0.0134,0.0483,True,0
+29,MFA bat buoc cho vai tro nao?,0.0311,0.0008,0.0127,0.0467,True,0
+30,Quy trinh luu tru du lieu nhan su ra sao?,0.0338,0.0,0.0,0.0354,False,0
+31,Nhan vien duoc nghi phep bao nhieu ngay?,0.0317,0.0008,0.0137,0.0482,True,0
+32,Tham nien anh huong ngay nghi nhu the nao?,0.0344,0.0007,0.0134,0.0506,True,0
+33,Nghi khong luong toi da bao nhieu ngay?,0.0334,0.0,0.0,0.0351,False,0
+34,Don nghi phep can ai phe duyet?,0.0296,0.0011,0.0139,0.0465,True,0
+35,Mat khau he thong doi bao lau?,0.0332,0.0009,0.0139,0.0501,True,0
+36,Yeu cau xoa du lieu ca nhan gui ai?,0.032,0.001,0.0146,0.0495,True,0
+37,Bao cao tai chinh quy gom gi?,0.036,0.001,0.0137,0.0533,True,0
+38,Nghi om can nop giay to trong bao lau?,0.0363,0.001,0.0134,0.0529,True,0
+39,MFA bat buoc cho vai tro nao?,0.0331,0.0008,0.0131,0.0492,True,0
+40,Quy trinh luu tru du lieu nhan su ra sao?,0.0362,0.0,0.0,0.038,False,0
+41,Nhan vien duoc nghi phep bao nhieu ngay?,0.0332,0.001,0.014,0.0503,True,0
+42,Tham nien anh huong ngay nghi nhu the nao?,0.044,0.0008,0.0134,0.0605,True,0
+43,Nghi khong luong toi da bao nhieu ngay?,0.0357,0.0,0.0,0.0379,False,0
+44,Don nghi phep can ai phe duyet?,0.0294,0.0011,0.0136,0.0461,True,0
+45,Mat khau he thong doi bao lau?,0.0321,0.0009,0.0138,0.0486,True,0
+46,Yeu cau xoa du lieu ca nhan gui ai?,0.032,0.0008,0.0142,0.0489,True,0
+47,Bao cao tai chinh quy gom gi?,0.0306,0.0009,0.013,0.0465,True,0
+48,Nghi om can nop giay to trong bao lau?,0.0331,0.0009,0.0125,0.0484,True,0
+49,MFA bat buoc cho vai tro nao?,0.0306,0.0009,0.0128,0.0461,True,0
+50,Quy trinh luu tru du lieu nhan su ra sao?,0.0342,0.0,0.0,0.0357,False,0
+51,Nhan vien duoc nghi phep bao nhieu ngay?,0.0315,0.001,0.0141,0.0487,True,0
+52,Tham nien anh huong ngay nghi nhu the nao?,0.032,0.0006,0.0134,0.0481,True,0
+53,Nghi khong luong toi da bao nhieu ngay?,0.0346,0.0,0.0,0.0361,False,0
+54,Don nghi phep can ai phe duyet?,0.0297,0.0009,0.0149,0.0475,True,0
+55,Mat khau he thong doi bao lau?,0.0327,0.0008,0.014,0.0497,True,0
+56,Yeu cau xoa du lieu ca nhan gui ai?,0.0314,0.0008,0.014,0.0483,True,0
+57,Bao cao tai chinh quy gom gi?,0.03,0.0008,0.0128,0.0455,True,0
+58,Nghi om can nop giay to trong bao lau?,0.0311,0.0007,0.0128,0.0465,True,0
+59,MFA bat buoc cho vai tro nao?,0.0315,0.0008,0.0124,0.0467,True,0
+60,Quy trinh luu tru du lieu nhan su ra sao?,0.0348,0.0,0.0,0.0364,False,0
+61,Nhan vien duoc nghi phep bao nhieu ngay?,0.0352,0.0008,0.0139,0.052,True,0
+62,Tham nien anh huong ngay nghi nhu the nao?,0.0322,0.0007,0.0135,0.0485,True,0
+63,Nghi khong luong toi da bao nhieu ngay?,0.0334,0.0,0.0,0.0351,False,0
+64,Don nghi phep can ai phe duyet?,0.0301,0.0009,0.0137,0.0465,True,0
+65,Mat khau he thong doi bao lau?,0.0315,0.0009,0.0136,0.0481,True,0
+66,Yeu cau xoa du lieu ca nhan gui ai?,0.0311,0.0008,0.0143,0.048,True,0
+67,Bao cao tai chinh quy gom gi?,0.0304,0.0009,0.0124,0.0455,True,0
+68,Nghi om can nop giay to trong bao lau?,0.0328,0.0008,0.0126,0.0482,True,0
+69,MFA bat buoc cho vai tro nao?,0.0308,0.0007,0.0125,0.0461,True,0
+70,Quy trinh luu tru du lieu nhan su ra sao?,0.0337,0.0,0.0,0.0351,False,0
+71,Nhan vien duoc nghi phep bao nhieu ngay?,0.0314,0.0007,0.0128,0.0467,True,0
+72,Tham nien anh huong ngay nghi nhu the nao?,0.0319,0.0006,0.013,0.0475,True,0
+73,Nghi khong luong toi da bao nhieu ngay?,0.0345,0.0,0.0,0.0358,False,0
+74,Don nghi phep can ai phe duyet?,0.0302,0.0009,0.0128,0.0457,True,0
+75,Mat khau he thong doi bao lau?,0.0323,0.001,0.0138,0.0493,True,0
+76,Yeu cau xoa du lieu ca nhan gui ai?,0.0306,0.0008,0.0136,0.0468,True,0
+77,Bao cao tai chinh quy gom gi?,0.0306,0.0008,0.0124,0.0457,True,0
+78,Nghi om can nop giay to trong bao lau?,0.0437,0.0009,0.013,0.0597,True,0
+79,MFA bat buoc cho vai tro nao?,0.0331,0.0009,0.0125,0.0486,True,0
+80,Quy trinh luu tru du lieu nhan su ra sao?,0.0341,0.0,0.0,0.0358,False,0
+81,Nhan vien duoc nghi phep bao nhieu ngay?,0.0337,0.0008,0.014,0.0504,True,0
+82,Tham nien anh huong ngay nghi nhu the nao?,0.0322,0.0007,0.0139,0.0488,True,0
+83,Nghi khong luong toi da bao nhieu ngay?,0.0345,0.0,0.0,0.0362,False,0
+84,Don nghi phep can ai phe duyet?,0.0291,0.0009,0.0132,0.0452,True,0
+85,Mat khau he thong doi bao lau?,0.0319,0.001,0.0136,0.0486,True,0
+86,Yeu cau xoa du lieu ca nhan gui ai?,0.0319,0.0009,0.0139,0.0487,True,0
+87,Bao cao tai chinh quy gom gi?,0.0296,0.0008,0.014,0.0465,True,0
+88,Nghi om can nop giay to trong bao lau?,0.0304,0.0008,0.0128,0.0458,True,0
+89,MFA bat buoc cho vai tro nao?,0.0306,0.0008,0.0126,0.046,True,0
+90,Quy trinh luu tru du lieu nhan su ra sao?,0.0316,0.0,0.0,0.0332,False,0
+91,Nhan vien duoc nghi phep bao nhieu ngay?,0.0296,0.0009,0.0132,0.0458,True,0
+92,Tham nien anh huong ngay nghi nhu the nao?,0.0291,0.0006,0.0132,0.045,True,0
+93,Nghi khong luong toi da bao nhieu ngay?,0.031,0.0,0.0,0.0327,False,0
+94,Don nghi phep can ai phe duyet?,0.0276,0.001,0.0129,0.0433,True,0
+95,Mat khau he thong doi bao lau?,0.0321,0.0009,0.0136,0.0487,True,0
+96,Yeu cau xoa du lieu ca nhan gui ai?,0.0292,0.0009,0.0139,0.0458,True,0
+97,Bao cao tai chinh quy gom gi?,0.0295,0.0008,0.0124,0.0448,True,0
+98,Nghi om can nop giay to trong bao lau?,0.0298,0.0008,0.0124,0.0449,True,0
+99,MFA bat buoc cho vai tro nao?,0.0297,0.0008,0.0127,0.0452,True,0
+100,Quy trinh luu tru du lieu nhan su ra sao?,0.0351,0.0,0.0,0.0369,False,0
+101,Nhan vien duoc nghi phep bao nhieu ngay?,0.0305,0.0009,0.0136,0.0468,True,0
+102,Tham nien anh huong ngay nghi nhu the nao?,0.0304,0.0006,0.0135,0.0463,True,0
+103,Nghi khong luong toi da bao nhieu ngay?,0.031,0.0,0.0,0.0325,False,0
+104,Don nghi phep can ai phe duyet?,0.0277,0.0008,0.0126,0.0431,True,0
+105,Mat khau he thong doi bao lau?,0.0294,0.0007,0.0138,0.046,True,0
+106,Yeu cau xoa du lieu ca nhan gui ai?,0.0294,0.0008,0.0136,0.0456,True,0
+107,Bao cao tai chinh quy gom gi?,0.029,0.0009,0.0123,0.0442,True,0
+108,Nghi om can nop giay to trong bao lau?,0.0305,0.0008,0.0129,0.046,True,0
+109,MFA bat buoc cho vai tro nao?,0.029,0.0009,0.0122,0.044,True,0
+110,Quy trinh luu tru du lieu nhan su ra sao?,0.0318,0.0,0.0,0.0332,False,0
+111,Nhan vien duoc nghi phep bao nhieu ngay?,0.0298,0.0008,0.0138,0.0464,True,0
+112,Tham nien anh huong ngay nghi nhu the nao?,0.03,0.0006,0.0134,0.0459,True,0
+113,Nghi khong luong toi da bao nhieu ngay?,0.0324,0.0,0.0,0.034,False,0
+114,Don nghi phep can ai phe duyet?,0.0306,0.0008,0.0126,0.0459,True,0
+115,Mat khau he thong doi bao lau?,0.0294,0.0008,0.0136,0.0457,True,0
+116,Yeu cau xoa du lieu ca nhan gui ai?,0.03,0.0007,0.0137,0.0462,True,0
+117,Bao cao tai chinh quy gom gi?,0.0272,0.0007,0.014,0.0439,True,0
+118,Nghi om can nop giay to trong bao lau?,0.0293,0.0008,0.0127,0.0446,True,0
+119,MFA bat buoc cho vai tro nao?,0.0413,0.0011,0.0127,0.0575,True,0
+120,Quy trinh luu tru du lieu nhan su ra sao?,0.035,0.0,0.0,0.0367,False,0

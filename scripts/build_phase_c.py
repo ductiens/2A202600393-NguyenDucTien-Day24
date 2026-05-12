@@ -6,6 +6,7 @@ import asyncio
 import csv
 import json
 from pathlib import Path
+from dotenv import load_dotenv
 
 ROOT = Path(__file__).resolve().parents[1]
 PHASE_C_DIR = ROOT / "phase-c"
@@ -333,6 +334,7 @@ async def run_latency_benchmark() -> dict:
 
 
 def main() -> None:
+    load_dotenv()
     import sys
 
     sys.path.insert(0, str(PHASE_C_DIR))

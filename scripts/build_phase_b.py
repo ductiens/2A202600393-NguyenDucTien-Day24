@@ -6,12 +6,13 @@ import csv
 import json
 import os
 import sys
+import re
 from pathlib import Path
 from statistics import mean
+from dotenv import load_dotenv
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from src.production.phase_b_judge import _cohen_kappa, _swap_and_average
 
 PHASE_A_TESTSET = ROOT / "phase-a" / "testset_v1.csv"
 PHASE_B_DIR = ROOT / "phase-b"
@@ -22,6 +23,100 @@ HUMAN_LABEL_PATH = PHASE_B_DIR / "human_labels.csv"
 KAPPA_SCRIPT_PATH = PHASE_B_DIR / "kappa_analysis.py"
 KAPPA_OUTPUT_PATH = PHASE_B_DIR / "kappa_analysis_output.json"
 BIAS_REPORT_PATH = PHASE_B_DIR / "judge_bias_report.md"
+
+
+def _normalize_label(label: str) -> str:
+    label = str(label).upper().strip()
+    return label if label in {"A", "B", "TIE"} else "TIE"
+
+
+def _cohen_kappa(labels_a: list[str], labels_b: list[str]) -> float:
+    if len(labels_a) != len(labels_b) or not labels_a:
+        return 0.0
+    labels = ("A", "B", "TIE")
+    a = [_normalize_label(x) for x in labels_a]
+    b = [_normalize_label(x) for x in labels_b]
+    n = len(a)
+    observed = sum(1 for x, y in zip(a, b) if x == y) / n
+    pe = 0.0
+    for lb in labels:
+        pa = sum(1 for x in a if x == lb) / n
+        pb = sum(1 for y in b if y == lb) / n
+        pe += pa * pb
+    if abs(1 - pe) < 1e-12:
+        return 1.0
+    return (observed - pe) / (1 - pe)
+
+
+def _rule_overlap_score(text: str, reference: str) -> float:
+    ref = set(re.findall(r"\w+", reference.lower()))
+    ans = set(re.findall(r"\w+", text.lower()))
+    if not ref or not ans:
+        return 0.0
+    return len(ref & ans) / len(ref)
+
+
+def _llm_pairwise_or_rule(question: str, answer_a: str, answer_b: str, ground_truth: str):
+    api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    judge_mode = os.getenv("JUDGE_MODE", "rule").strip().lower()
+    if judge_mode == "auto" and api_key:
+        try:
+            from openai import OpenAI
+
+            timeout_sec = float(os.getenv("JUDGE_TIMEOUT_SEC", "6"))
+            client = OpenAI(api_key=api_key, timeout=timeout_sec, max_retries=0)
+            prompt = (
+                "You are an impartial evaluator. Compare Candidate A and Candidate B.\n"
+                "Score factual accuracy, relevance, conciseness.\n"
+                "Return ONLY JSON: {\"winner\":\"A|B|TIE\",\"score_a\":0-1,\"score_b\":0-1}\n\n"
+                f"Question: {question}\n"
+                f"Reference: {ground_truth}\n"
+                f"Candidate A: {answer_a}\n"
+                f"Candidate B: {answer_b}\n"
+            )
+            resp = client.chat.completions.create(
+                model=os.getenv("JUDGE_MODEL", "gpt-4o-mini"),
+                temperature=0,
+                response_format={"type": "json_object"},
+                messages=[{"role": "user", "content": prompt}],
+            )
+            content = resp.choices[0].message.content or "{}"
+            match = re.search(r"\{[\s\S]*\}", content)
+            payload = json.loads(match.group(0)) if match else {}
+            winner = _normalize_label(payload.get("winner", "TIE"))
+            score_a = float(payload.get("score_a", 0.5))
+            score_b = float(payload.get("score_b", 0.5))
+            return {"winner": winner, "score_a": score_a, "score_b": score_b, "engine": "llm"}
+        except Exception:
+            pass
+
+    score_a = _rule_overlap_score(answer_a, ground_truth)
+    score_b = _rule_overlap_score(answer_b, ground_truth)
+    if abs(score_a - score_b) <= 0.05:
+        winner = "TIE"
+    else:
+        winner = "A" if score_a > score_b else "B"
+    return {"winner": winner, "score_a": score_a, "score_b": score_b, "engine": "rule"}
+
+
+def _swap_and_average(question: str, answer_a: str, answer_b: str, ground_truth: str) -> dict:
+    forward = _llm_pairwise_or_rule(question, answer_a, answer_b, ground_truth)
+    backward = _llm_pairwise_or_rule(question, answer_b, answer_a, ground_truth)
+    score_a = (forward["score_a"] + backward["score_b"]) / 2.0
+    score_b = (forward["score_b"] + backward["score_a"]) / 2.0
+    if abs(score_a - score_b) <= 0.05:
+        debiased = "TIE"
+    else:
+        debiased = "A" if score_a > score_b else "B"
+    mapped_back = {"A": "B", "B": "A", "TIE": "TIE"}[backward["winner"]]
+    return {
+        "forward": type("JudgeObj", (), {"winner": forward["winner"], "engine": forward["engine"]})(),
+        "backward": type("JudgeObj", (), {"winner": backward["winner"], "engine": backward["engine"]})(),
+        "debiased_winner": debiased,
+        "debiased_score_a": score_a,
+        "debiased_score_b": score_b,
+        "position_flip": forward["winner"] != mapped_back,
+    }
 
 
 def _read_csv(path: Path) -> list[dict]:
@@ -237,6 +332,7 @@ def write_bias_report(pairwise_rows: list[dict]) -> None:
 
 
 def main() -> None:
+    load_dotenv()
     PHASE_B_DIR.mkdir(parents=True, exist_ok=True)
     dataset = _read_csv(PHASE_A_TESTSET)
     dataset_by_id = {x["id"]: x for x in dataset}
